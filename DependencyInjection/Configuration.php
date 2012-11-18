@@ -22,7 +22,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('whitelisting')->end()
+                ->scalarNode('whitelisting')->defaultTrue()->end()
             ->end();
 
         return $treeBuilder;
